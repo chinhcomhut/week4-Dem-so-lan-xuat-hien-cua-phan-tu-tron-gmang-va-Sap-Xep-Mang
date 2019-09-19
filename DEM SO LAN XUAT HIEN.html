@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i <100; i++) {
+        arr[i] = Math.floor(Math.random() * 101);
+    }
+    function countShow(arr, index) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+           if(arr[i]==index){
+               count++;
+           }
+        }return count;
+    }
+arr.sort(function (a,b) {
+    return a-b;
+});
+
+    // let arr = [1,2,3,4,7,8,10];
+    // arr.sort(function (a,b) {
+    //     return a-b;
+    // });
+
+    // function myFunction1() {
+    //     points.sort();
+    //     // document.getElementById("demo").innerHTML = points;
+    // }
+    //
+    // function myFunction2() {
+    //     points.sort(function (a, b) {
+    //         return a - b
+    //     });}
+
+    // document.getElementById("demo").innerHTML = points;
+</script>
+</body>
+</html>
